@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Photosite With Floats</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Source+Sans+Pro:200" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="float.css">
+</head>
+
+<body>
+        <!-- Menu -->
+        <div class="menu-container">
+                <div class="close-icon"><i class="fas fa-times"></i></div>
+                <ul class="menu">
+                    <li><a href="#">HOME</a></li>
+                    <li>
+                        
+                        <a  class="show-submenu" href="#">
+                            <i class="fas fa-plus"></i>
+                            <i class="fas fa-minus hide-icon"></i>
+                            PORTFOLIO
+                        </a>
+                        <ul class="sub-menu-content">
+                            <li><a href="#">THE DESERT</a></li>
+                            <li><a href="#">HIGH SIERRA</a></li>
+                            <li><a href="#">BEACH</a></li>
+                            <li><a href="#">FOREST WILDERNESS</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">BIO</a></li>
+                    <li><a href="#">STORE</a></li>
+                </ul>
+            </div>
+    <!--Header of page starts-->
+    <header>
+       
+        <nav>
+            <ul>
+                <li><a href="#"><i class="fas fa-shopping-bag"></i><i id="cart-items-count">0</i></a></li>
+                <li><a href="#">T⎯ Y</a></li>
+                <li><i class="fas fa-bars"></i></li>
+            </ul>
+        </nav>
+        <div class="slideshow">
+            <div class="titles">
+                    <h1>TYVOIAX KOJO</h1>
+                    <h3>Landscape Photographer</h3>
+            </div>
+            
+            <div class="image-slider">
+                <img src="https://images.pexels.com/photos/210307/pexels-photo-210307.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+            </div>
+            <div class="current-image-indicator">
+                <ul>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                    <li><span></span></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!--Header of page ends-->
+
+    <!--Main content starts-->
+    <main>
+        <div class="content">
+            <div class="portfolio-kind-num">
+                <a href="">01</a>
+            </div>
+            <img class="portfolio-kind-image" src="https://images.pexels.com/photos/210307/pexels-photo-210307.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                alt="">
+            <div class="portfolio-kind-name">
+                <a href="">The Desert</a>
+            </div>
+            <div class="more-info">
+                <a href="">SEE MORE</a>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="portfolio-kind-num">
+                <a href="">02</a>
+            </div>
+            <img class="portfolio-kind-image" src="https://images.pexels.com/photos/131721/pexels-photo-131721.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                alt="">
+            <div class="portfolio-kind-name">
+                <a href="">High Sierra</a>
+            </div>
+            <div class="more-info">
+                <a href="">SEE MORE</a>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="portfolio-kind-num">
+                <a href="">03</a>
+            </div>
+            <img class="portfolio-kind-image" src="https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                alt="">
+            <div class="portfolio-kind-name">
+                <a href="">Beach</a>
+            </div>
+            <div class="more-info">
+                <a href="">SEE MORE</a>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="portfolio-kind-num">
+                <a href="">04</a>
+            </div>
+            <img class="portfolio-kind-image" src="https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                alt="">
+            <div class="portfolio-kind-name">
+                <a href="">Forest Wilderness</a>
+            </div>
+            <div class="more-info">
+                <a href="">SEE MORE</a>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer starts -->
+    <footer>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+        <div class="copyright">
+            &copy2018 by Tyvoiax
+        </div>
+    </footer>
+
+    <script src="float.js"></script>
+</body>
+
+</html>
