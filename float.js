@@ -123,3 +123,12 @@ const footerContent = document.querySelector('footer');
 //     // // }
 // };
 
+// When the menu (mobile menu) is opened and the window is resized (increased)
+// Hide the menu
+window.onresize = () => {
+    if (window.innerWidth > 768) {
+        document.documentElement.style.overflow = 'scroll';
+        menu.style.display = 'none';
+    }
+};
+
