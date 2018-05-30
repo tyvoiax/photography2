@@ -53,22 +53,22 @@ console.log(elementsToHide);
 // Show menu when the humburger menu icon is clicked
 hamburgerIcon.addEventListener('click', () => {
     menu.style.display = 'block';
-
+document.documentElement.style.overflow = 'hidden';
     //Hide every element that is not in the menu-container class
-    elementsToHide.forEach(item => {
-        item.style.display = 'none';
-    });
+    // elementsToHide.forEach(item => {
+    //     item.style.display = 'none';
+    // });
 });
 
 // Hide menu when the close menu icon is clicked
 closeMenuIcon.addEventListener('click', (e) => {
     if (e.target == closeMenuIcon) {
         menu.style.display = 'none';
-
+        document.documentElement.style.overflow = 'scroll';
         //Show every element that was previously hidden when the menu was shown
-       elementsToHide.forEach(item => {
-           item.style.display = 'block';
-       });
+    //    elementsToHide.forEach(item => {
+    //        item.style.display = 'block';
+    //    });
        console.log('fired');
     }
    
@@ -108,13 +108,18 @@ window.onscroll = () => {
 };
 const mainContent = document.querySelector('main');
 const footerContent = document.querySelector('footer');
-document.body.onresize = () => {
-    if(screen.width >= 700) {
-        menu.style.display = 'block';
-        mainContent.style.display = 'grid';
-        footerContent.style.display = 'flex';
-    } else {
-        menu.style.display = 'none';
-        footerContent.style.display = 'block';
-    }
-};
+// window.onresize = () => {
+//     if(window.width >= 768) {
+//         menu.style.display = 'block';
+//         mainContent.style.display = 'grid';
+//         footerContent.style.display = 'flex';
+//         document.documentElement.style.overflow = 'scroll';
+//         console.log('resizing');
+//     } 
+    
+//     // else {
+//     // //     // menu.style.display = 'none';
+//     // //     // footerContent.style.display = 'block';
+//     // // }
+// };
+
