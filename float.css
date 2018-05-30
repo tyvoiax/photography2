@@ -267,7 +267,7 @@ footer .copyright {
 
 /* Styles for big screens */
 
-@media screen and (min-width: 700px){
+@media screen and (min-width: 768px){
 
     /* Remove the image indicators */
     .current-image-indicator {
@@ -305,7 +305,7 @@ footer .copyright {
         text-align: center;
         padding: 30px;
         line-height: 3em;
-        display: block;
+        display: block !important;
         background: rgba(0, 0, 0, 0);
         position: fixed;
         left: 45%;
